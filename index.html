@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saurabh Kumar |  Portfolio</title>
+    <meta
+      name="description"
+      content="Interactive 3D-inspired portfolio of Saurabh Kumar, Software Engineer and Assistant Professor."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Outfit:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <canvas id="bgMesh" aria-hidden="true"></canvas>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a href="#home" class="brand">SAURABH.K</a>
+      <nav class="top-nav">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#gallery">Snapshots</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">Light/Dark</button>
+    </header>
+
+    <main>
+      <section id="home" class="hero reveal">
+        <div class="hero-copy">
+          <p class="eyebrow">Software Engineer - Educator - DSA Mentor</p>
+          <h1>Building high-impact products with strong engineering and modern UX.</h1>
+          <p class="hero-text">
+            M.Tech in Computer Science (Information Security) from NIT Calicut (CGPA 8.0).
+            Assistant Professor at UPES Dehradun, teaching CS core and DSA, with industry
+            experience in full-stack and cybersecurity application development.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#projects">Explore Work</a>
+            <a class="btn btn-secondary" href="mailto:saurabhkumar0206@gmail.com">Hire Me</a>
+          </div>
+          <div class="link-preview-grid social-grid">
+            <a href="https://linkedin.com/in/saurabh-kumar-08002b1b3/" class="link-preview-card tilt-card" target="_blank" rel="noreferrer">
+              <img src="./image/linkdin.png" alt="LinkedIn Preview" loading="lazy" />
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/saurabh0206" class="link-preview-card tilt-card" target="_blank" rel="noreferrer">
+              <img src="./image/github.png" alt="GitHub Preview" loading="lazy" />
+              <span>GitHub</span>
+            </a>
+            <a href="https://leetcode.com/saurabh0206/" class="link-preview-card tilt-card" target="_blank" rel="noreferrer">
+              <img src="./image/Leetcode.png" alt="LeetCode Preview" loading="lazy" />
+              <span>LeetCode</span>
+            </a>
+            <a href="https://auth.geeksforgeeks.org/user/saurabhkumar0206/practice" class="link-preview-card tilt-card" target="_blank" rel="noreferrer">
+              <img src="./image/geeksForGeeks.png" alt="GeeksforGeeks Preview" loading="lazy" />
+              <span>GeeksforGeeks</span>
+            </a>
+          </div>
+        </div>
+        <div class="hero-3d tilt-card">
+          <div class="layer layer-1"></div>
+          <div class="layer layer-2"></div>
+          <div class="layer layer-3">
+            <p>Profile Highlights</p>
+            <h3>Engineering & Academics Focus</h3>
+            <ul>
+              <li><strong>Top 1% GFG</strong> Pan-India Job-A-Thon</li>
+              <li><strong>500+ DSA</strong> problem-solving pipeline</li>
+              <li><strong>Full-Stack & AI:</strong> Vue, React, Spring Boot, CI/CD</li>
+              <li><strong>Cybersecurity Specialization:</strong> M.Tech with 8.0 CGPA</li>
+              <li><strong>Mentorship:</strong> Strong record in pedagogical outcomes</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="panel reveal">
+        <div class="section-head">
+          <h2>About Me</h2>
+          <p>Dehradun, Uttarakhand, India</p>
+        </div>
+        <p>
+          I teach and build. My work spans DSA instruction, internet programming, and
+          product-focused web development. I enjoy translating difficult technical concepts
+          into practical learning and shipping robust software quickly.
+        </p>
+        <div class="stats">
+          <article class="stat tilt-card">
+            <h3>500+</h3>
+            <p>problems solved</p>
+          </article>
+          <article class="stat tilt-card">
+            <h3>Top 1%</h3>
+            <p>GFG Job-A-Thon rank</p>
+          </article>
+          <article class="stat tilt-card">
+            <h3>114-Day</h3>
+            <p>GFG coding streak</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="panel reveal">
+        <div class="section-head">
+          <h2>Experience</h2>
+          <p>Academic and engineering track record</p>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item tilt-card">
+            <p class="meta">Jan 2026 - Present | Full-time</p>
+            <h3>DSA Instructor / Assistant Professor - UPES</h3>
+            <p>
+              DSA Instructor, Technical Trainer (Java/C++), and subject matter expert in
+              algorithms and problem solving.
+            </p>
+            <p class="meta">Key skills: Java, Core Java, DSA, Data Structures and Algorithms</p>
+            <a href="https://www.upes.ac.in/" class="link-preview-card inline-preview tilt-card" target="_blank" rel="noreferrer">
+              <img src="./image/Upes.png" alt="UPES Preview" loading="lazy" />
+              <span>UPES Dehradun</span>
+            </a>
+          </article>
+          <article class="timeline-item tilt-card">
+            <p class="meta">Jul 2025 - Dec 2025 | Full-time</p>
+            <h3>Assistant Professor - LPU</h3>
+            <p>
+              Taught Internet Programming and mentored students in Full Stack Development
+              and AI fundamentals.
+            </p>
+            <p class="meta">Skills: HTML/CSS, JavaScript, Project Management, Pedagogy</p>
+            <a href="https://www.lpu.in/" class="link-preview-card inline-preview tilt-card" target="_blank" rel="noreferrer">
+              <img src="./image/LPU.png" alt="LPU Preview" loading="lazy" />
+              <span>Lovely Professional University</span>
+            </a>
+          </article>
+          <article class="timeline-item tilt-card">
+            <p class="meta">Jun 2025 - Aug 2025 | Full-time</p>
+            <h3>Software Engineer 1 - Opsfinitive</h3>
+            <p>
+              Built cybersecurity-oriented features using Vue.js and Python, contributed to
+              faster delivery cycles, and improved product outcomes.
+            </p>
+            <p class="meta">
+              Impact: 90%+ risk reduction target, 30% faster turnaround in feature delivery
+            </p>
+            <a href="https://opsfinitive.io/" class="link-preview-card inline-preview tilt-card" target="_blank" rel="noreferrer">
+              <img src="./image/opsfinitive.png" alt="Opsfinitive Site Preview" loading="lazy" />
+              <span>Company Site: Opsfinitive.io</span>
+            </a>
+          </article>
+          <article class="timeline-item tilt-card">
+            <p class="meta">Aug 2021 - Sep 2021 | Internship</p>
+            <h3>Internship - Internship Studio</h3>
+            <p>Worked on foundational AI/NLP implementation and project development.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="panel reveal">
+        <div class="section-head">
+          <h2>Projects </h2>
+          <p>Hover cards for depth interaction</p>
+        </div>
+        <div class="card-grid">
+          <article class="project-card tilt-card">
+            <div class="project-glow"></div>
+            <p class="meta">Aug 2025 - Nov 2025</p>
+            <h3>Istanbulhair Website</h3>
+            <p>
+              Developed a full website experience supporting treatment discovery and
+              conversion-oriented booking journey.
+            </p>
+            <a href="https://istanbulhair.nl/" class="link-preview-card tilt-card inline-preview" target="_blank" rel="noreferrer">
+              <img src="./image/Istanbul.png" alt="Istanbulhair Site Preview" loading="lazy" />
+              <span>Visit Live Project</span>
+            </a>
+          </article>
+          <article class="project-card tilt-card">
+            <div class="project-glow"></div>
+            <p class="meta">Jan 2025 - Apr 2025</p>
+            <h3>Classroom Key and Bicycle Management System</h3>
+            <p>
+              Accountability-centric key tracking and campus bicycle module designed to
+              reduce losses and improve student mobility.
+            </p>
+            <a href="https://github.com/saurabh0206/Key-Management-System" target="_blank" rel="noreferrer">View Source</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="education" class="panel reveal">
+        <div class="section-head">
+          <h2>Education & Research</h2>
+          <p>From school foundations to advanced specialization</p>
+        </div>
+        <div class="edu-grid">
+          <article class="edu-card tilt-card">
+            <h3>M.Tech - Computer Science (Information Security)</h3>
+            <p class="meta">National Institute of Technology, Calicut | 2023 - 2025</p>
+            <p>CGPA: 8.0</p>
+            <a href="https://nitc.ac.in/" class="link-preview-card inline-preview tilt-card" target="_blank" rel="noreferrer">
+              <img src="./image/NITC.png" alt="NIT Calicut Preview" loading="lazy" />
+              <span>NIT Calicut</span>
+            </a>
+          </article>
+          <article class="edu-card tilt-card">
+            <h3>B.Tech / B.E. - Computer Science and Engineering</h3>
+            <p class="meta">Uttar Pradesh Technical University (UPTU) | 2019 - 2023</p>
+            <p>Full-time degree program</p>
+            <a href="#education" class="link-preview-card inline-preview tilt-card" rel="noreferrer">
+              <img src="./image/RajkiyaENgineering.png" alt="UPTU Preview" loading="lazy" />
+              <span>UPTU / Rajkiya Engineering</span>
+            </a>
+          </article>
+          <article class="edu-card tilt-card">
+            <h3>Class XII - JNV Bijnor</h3>
+            <p class="meta">CBSE | 2018</p>
+            <p>84% with PCM and Computer Science</p>
+            <a href="https://navodaya.gov.in/nvs/nvs-school/BIJNOR/en/home/" class="link-preview-card inline-preview tilt-card" target="_blank" rel="noreferrer">
+              <img src="./image/JNVBijnor.png" alt="JNV Bijnor Preview" loading="lazy" />
+              <span>JNV Bijnor</span>
+            </a>
+          </article>
+          <article class="edu-card tilt-card">
+            <h3>Class X - JNV Bijnor</h3>
+            <p class="meta">CBSE | 2016</p>
+            <p>9.0 CGPA</p>
+            <a href="https://navodaya.gov.in/nvs/nvs-school/BIJNOR/en/home/" class="link-preview-card inline-preview tilt-card" target="_blank" rel="noreferrer">
+              <img src="./image/JNVBijnor.png" alt="JNV Bijnor Preview" loading="lazy" />
+              <span>JNV Bijnor</span>
+            </a>
+          </article>
+          <article class="edu-card tilt-card">
+            <h3>Research Publication</h3>
+            <p class="meta">IEEE Paper - Apr 2024</p>
+            <a
+              href="https://www.researchgate.net/publication/374468997_A_Blockchain-Based_E-Voting_System_for_India_Addressing_Security_Challenges_with_Aadhaar_Card_Authentication"
+              class="link-preview-card inline-preview tilt-card"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src="./image/evoting.png" alt="ResearchGate Publication Preview" loading="lazy" />
+              <span>Blockchain E-Voting System</span>
+            </a>
+          </article>
+        </div>
+      </section>
+
+   
+
+      <section class="panel reveal">
+        <div class="section-head">
+          <h2>Skills, Languages, and Career Profile</h2>
+          <p>Teaching + engineering + communication</p>
+        </div>
+        <div class="chips">
+          <span>Java</span><span>Core Java</span><span>C++</span><span>DSA</span>
+          <span>HTML/CSS</span><span>JavaScript</span><span>Vue.js</span><span>Python</span>
+          <span>Spring Boot</span><span>REST APIs</span><span>JWT</span><span>OAuth2</span>
+          <span>MongoDB</span><span>MySQL</span><span>Git</span><span>Postman</span>
+          <span>Maven</span><span>NLP</span><span>SkLearn</span><span>NLTK</span>
+        </div>
+        <p class="profile-summary">
+          M.Tech in Computer Science (Information Security) from NIT Calicut with CGPA 8.0.
+          Currently serving as Assistant Professor at UPES Dehradun, specializing in CS-core
+          subjects and DSA. Proven competitive programming track record with 500+ solved
+          problems and a top 1% GFG Job-A-Thon rank.
+        </p>
+        <p class="meta">Languages: English (Proficient), Hindi (Expert)</p>
+      </section>
+
+      <section id="contact" class="panel reveal">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p>Open to contractual and permanent opportunities</p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:saurabhkumar0206@gmail.com">saurabhkumar0206@gmail.com</a>
+          <a href="tel:+917409908489">+91 7409908489</a>
+          <span>Harewali, Najibabad, Bijnor, Uttar Pradesh - 246732</span>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Saurabh Kumar</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
